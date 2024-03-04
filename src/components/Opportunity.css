@@ -1,0 +1,138 @@
+.opportunities{
+   position: relative;
+   height: 215px;
+   margin-top: 25px;
+}
+
+.overlap-20 {
+  background: linear-gradient(180deg, rgb(20.4, 0, 255) 0%, rgb(22.48, 7.48, 52.49) 73.47%, rgb(250, 4.89, 255) 98.48%);
+  border-radius: 5px;
+  height: 215px;
+  left: opx;
+  position: absolute;
+  /* top: 1466px; */
+  width: 27%;
+}
+
+.text-wrapper-18 {
+  color: #ffffff;
+  font-family: "Montserrat", Helvetica;
+  font-size: 30px;
+  font-weight: 600;
+  height: 43px;
+  left: 21px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 55px;
+  width: 222px;
+}
+.text-wrapper-19 {
+  color: #ffffff;
+  font-family: "Montserrat", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  height: 43px;
+  left: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 82px;
+  width: 222px;
+}
+
+.rectangle-13 {
+  background-color: #ffffff;
+  border-radius: 15px;
+  height: 6px;
+  left: 22px;
+  position: absolute;
+  top: 124px;
+  width: 97px;
+}
+
+.group-6 {
+  background-color: #3f80ff;
+  border-radius: 5px;
+  height: 104px;
+  left:28.5%;
+  position: absolute;
+  /* top: 1466px; */
+  width: 35%;
+}
+
+.frame-2 {
+  border-radius: 5px;
+  height: 35px;
+  left: 39px;
+  position: absolute;
+  top: 35px;
+  width: 149px;
+}
+
+.text-wrapper-20 {
+  color: #ffffff;
+  font-family: "Montserrat", Helvetica;
+  font-size: 25px;
+  font-weight: 600;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: -1px;
+  width: 218px;
+}
+
+.rectangle-14 {
+  height: 104px;
+  left: 245px;
+  position: absolute;
+  top: 0;
+  width: 155px;
+}
+
+.group-7 {
+  background-color: #c4008d;
+  border-radius: 5px;
+  height: 104px;
+  right: 0;
+  position: absolute;
+  /* top: 1466px; */
+  width: 35%;
+}
+.group-8 {
+  background-color: #ff3f3f;
+  border-radius: 5px;
+  height: 104px;
+  left: 28.5%;
+  position: absolute;
+  top: 110px;
+  width: 35%;
+}
+
+.rectangle-15 {
+  height: 104px;
+  left: 245px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 155px;
+}
+.group-9 {
+  background-color: #2000ea;
+  border-radius: 5px;
+  height: 104px;
+  right: 0;
+  position: absolute;
+  top: 110px;
+  width: 35%;
+}
+
+.rectangle-16 {
+  height: 97px;
+  left: 245px;
+  object-fit: cover;
+  position: absolute;
+  top: 6px;
+  width: 150px;
+}

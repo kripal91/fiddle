@@ -1,0 +1,105 @@
+$LandingCont-bg: #FCFAFF;
+$LandingCont-border: #DADADA;
+$LandingCont-logo-bg: #8142FF;
+$LandingCont-logo-text: #F141E5;
+$LandingCont-logo-hover-opacity: 0.85;
+
+.LandingCont {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    position: absolute;
+    left: 0;
+    top: 5vmin;
+    width: 16vmax;
+    height: 16vmin;
+  }
+
+  .SLeftCont {
+    width: 40vmax;
+    height: 58vmin;
+    margin: 10vmin 0vw 5vmin 0vw;
+    padding: 3vmax 1.5vmin;
+
+    > .leftContent {
+      border: 1px solid $LandingCont-border;
+      background: $LandingCont-bg;
+      background-blend-mode: darken;
+      border-radius: 0.75rem;
+      // padding: 4rem 1rem;
+      padding: 4vmax 2vmin;
+      margin-bottom: 7.5vmin;
+
+      h1 {
+        margin-bottom: 2vmax;
+        font-size: 2.65vmax;
+        font-weight: 650;
+      }
+
+      h3 {
+        margin-bottom: 3.5vmax;
+        font-size: 1.25vmax;
+      }
+    }
+  }
+
+  .SignUpInBtn {
+    display: flex;
+    gap: 2vmin;
+
+    .SignUpBtn {
+      background-color: $LandingCont-logo-bg;
+      padding: 6px 3vh;
+      border-radius: 1.75vmax;
+      font-size: 1.6vmax;
+      cursor: pointer;
+
+      &:hover {
+        opacity: $LandingCont-logo-hover-opacity;
+      }
+    }
+
+    .SignInBtn {
+      background-color: $LandingCont-logo-text;
+      padding: 6px 3vh;
+      border-radius: 1.75vmax;
+      font-size: 1.6vmax;
+      cursor: pointer;
+
+      &:hover {
+        opacity: $LandingCont-logo-hover-opacity;
+      }
+    }
+  }
+
+  .SRightCont {
+    width: 40vmax;
+    height: 90vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .RightLandImg {
+      width: 90%;
+      filter: drop-shadow(0 0 20px rgba(151, 9, 245, 0.39));
+    }
+  }
+}
+@media (max-width: 480px) {
+  .LandingCont{
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding-top: 3vmax;
+  }
+  .LandingCont .SLeftCont{
+    width: 40vmax;
+    height: 58vmin;
+    margin: 0vmin 0vw 0vmin 0vw;
+    padding: 0vmax 1.5vmin;
+  }
+  
+}
