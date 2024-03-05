@@ -314,6 +314,62 @@ $breakpoint-large: 1440px;
 @media screen and (max-width: 480px) {
   .container{
     position: relative;
-  left: -260px;
+    left: -260px;
   }
+}
+
+.footer {
+  
+  display: hidden;
+}
+
+.footer-icon {
+  font-size: 1.5rem; // Adjust icon size as needed
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    position: relative;
+    left: -260px; // Adjust position to fit within the screen
+  }
+
+  .footer {
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2vh;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(255, 255, 255); /* Set your desired background color */
+    border-top: 0.25px solid rgb(195, 192, 192);
+  }
+  
+  .footer-icon {
+    font-size: 1.75rem; /* Adjust icon size as needed */
+    cursor: pointer;
+    color: #333; /* Set the default color for icons */
+    transition: color 0.3s ease; /* Add transition effect */
+  
+  &:hover {
+    color: black; /* Change color on hover */
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+  .sidebar {
+    display: none; // Hide the sidebar on small screens
+  }
+
+  .content {
+    margin-left: 0; // Reset margin for content
+    padding-left: 0; // Reset padding for content
+  }
+
+  .sidebar-open {
+    width: 100%; // Set width to fill the screen on small devices
+  }
+
+  
 }
