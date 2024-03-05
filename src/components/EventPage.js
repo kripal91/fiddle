@@ -53,7 +53,7 @@ const EventsPage = () => {
 
   return (
     <div className="events-page">
-      <h1 className='page-header'>| Events</h1>
+      <h1 className='page-header'>| Events for You</h1>
       <div className="event-cards">
         {eventsData.map((event) => (
           <div

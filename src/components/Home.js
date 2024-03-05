@@ -47,9 +47,9 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="Carousel">
+      {/* <div className="Carousel">
         <Carousel />
-      </div>
+      </div> */}
 
       <div className="Opportunities">
         <div className="OppHeading">
