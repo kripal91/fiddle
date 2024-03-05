@@ -1,0 +1,137 @@
+body {
+    background: #76b852;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-container {
+    width: 360px;
+    background-color: white;
+    margin: auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    padding: 10px;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  
+  .success-message {
+    font-family: "Roboto", sans-serif;
+    background-color: #3f89f8;
+    padding: 15px;
+    color: white;
+    text-align: center;
+  }
+  
+  .form-field {
+    margin: 10px 0 10px 0;
+    padding: 15px;
+    font-size: 16px;
+    border: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  span {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: red;
+    margin-bottom: 15px;
+  }
+  
+  input {
+    background: #f2f2f2;
+  }
+  
+  .error {
+    border-style: solid;
+    border: 2px solid #ffa4a4;
+  }
+  
+  button {
+    background: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    cursor: default;
+  }
+  
+  .teammate-container {
+    margin-top: 20px;
+  }
+  
+  .teammate-input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .add-teammate-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-teammate-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .teammate-input {
+    font-size: 1rem;
+    margin: 10px 0;
+    padding: 15px;
+    width: 92%;
+    background: #f2f2f2;
+    border: none; /* Remove default input border */
+  }
+  
+  .teammate-input:last-child {
+    margin-bottom: 50px; /* Add extra margin-bottom to the last teammate input */
+  }
+  
+  .add-teammate-button {
+    margin-top: 10px;
+    margin-bottom: 10px; /* Add margin-bottom to separate the button from the inputs */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-teammate-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* For mobile devices */
+/* For small devices */
+@media only screen and (max-width: 600px) {
+    .form-container {
+      width: 90%;
+    }
+  
+    .teammate-input {
+      width: 90%;
+    }
+  
+    .add-teammate-button {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+
+  
+  

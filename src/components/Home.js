@@ -67,26 +67,18 @@ function Home() {
         <EventCarousel />
       </div>
 
-      <div className="OpportunityCont">
+      {/* <div className="OpportunityCont">
         <Opportunity />
-      </div>
-
-      <div className="Opportunities">
-        <div className="OppHeading">
-          <h2>| Gigs for You </h2>
-          {/* <h4>| Showcase your skills by participating in various opportunities of your interest.</h4> */}
-        </div>
-        <EventCarousel />
-      </div>
+      </div> */}
   
-      <div className="Opportunities1">
+      {/* <div className="Opportunities1">
         <div className="OppHeading1">
           <h2>| Popular Event Organizers </h2>
-          {/* <h4>| Showcase your skills by participating in various opportunities of your interest.</h4> */}
         </div>
         <FollowCarousel />
-      </div>
-      <div className="spacer">©️RowX 2024</div>
+      </div> */}
+      <div className="spacer">©️RowX 2024
+      <p>Privacy Policy • Terms of Use • Report</p></div>
     </div>
   );
 }

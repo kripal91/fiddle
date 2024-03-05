@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import "./registerEvent.css";
+import React, { useState } from "react";
 import { useParams } from 'react-router-dom';
-import './RegistrationForm.scss';
+// import { useParams } from 'react-router-dom';
 
-const RegisterEvent = () => {
-  const { eventId } = useParams();
+const RegisterEvent= () => {
+  const { eventId } = useParams(); // Access eventId from URL params
+  
+
 
   const [values, setValues] = useState({
     firstName: "",
@@ -51,6 +54,7 @@ const RegisterEvent = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (values.firstName && values.lastName && values.email) {
+      // Validate main user details
       setTeammates([...teammates, values]);
       setValues({
         firstName: "",
@@ -64,7 +68,7 @@ const RegisterEvent = () => {
 
   return (
     <div className="form-container">
-      <h2>Registration Form </h2>
+      <h2>Registration Form for Event ID: {eventId}</h2>
       <form className="register-form" onSubmit={handleSubmit}>
         {submitted && valid && (
           <div className="success-message">
@@ -166,5 +170,4 @@ const RegisterEvent = () => {
     </div>
   );
 }
-
 export default RegisterEvent;

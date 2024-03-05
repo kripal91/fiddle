@@ -90,7 +90,8 @@ const EventsPage = () => {
       )}
 
 
-      <div className='spacer'><p>©️RowX 2024</p></div>
+      <div className='spacer'>©️RowX 2024
+      <p>Privacy Policy • Terms of Use • Report</p></div>
     </div>
   );
 };

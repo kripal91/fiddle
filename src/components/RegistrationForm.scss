@@ -1,38 +1,119 @@
-// Form.scss
-.form {
-    max-width: 400px;
-    margin: 0 auto;
-  
-    .form-group {
-      margin-bottom: 20px;
-  
-      label {
-        display: block;
-        margin-bottom: 5px;
+// RegisterForm.scss
+
+$form-bg-color: #eceaee;
+$form-border-color: #ddd;
+$form-text-color: #333;
+$input-border-color: #ccc;
+$input-focus-border-color: #007bff;
+$button-bg-color: #007bff;
+$button-hover-bg-color: #0056b3;
+$button-text-color: #fff;
+$error-color: #ff0000;
+$shadow-color: rgba(0, 0, 0, 0.2);
+
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 20vh;
+  padding: 20px;
+  border: 1px solid $form-border-color;
+  border-radius: 8px;
+  background-color: $form-bg-color;
+  color: $form-text-color;
+  box-shadow: 0 4px 8px $shadow-color;
+  transition: box-shadow 0.3s ease;
+
+  h2 {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    text-shadow: 2px 1px 7px gray;
+  }
+
+  .register-form {
+    display: flex;
+    flex-direction: column;
+
+    .form-field {
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid $input-border-color;
+      border-radius: 5px;
+      transition: border-color 0.3s ease;
+      &:hover{
+        background-color: $button-hover-bg-color;
+        transition: 0.2s ease-in;
       }
-  
-      input[type='text'],
-      input[type='email'] {
-        width: 100%;
-        padding: 10px;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
+      &:focus {
+        border-color: $input-focus-border-color;
+        outline: none;
       }
     }
-  
-    button {
+
+    #first-name-error,
+    #last-name-error,
+    #email-error {
+      color: $error-color;
+      font-size: 14px;
+      margin-top: 5px;
+      display: block;
+    }
+
+    .add-teammate-button {
+      margin: 20px 0;
       padding: 10px 20px;
       font-size: 16px;
-      background-color: #007bff;
-      color: #fff;
+      background-color: $button-bg-color;
+      color: $button-text-color;
       border: none;
       border-radius: 5px;
       cursor: pointer;
-  
+      transition: background-color 0.3s ease;
+
       &:hover {
-        background-color: #0056b3;
+        background-color: $button-hover-bg-color;
+        transition: 0.2s ease-in;
       }
     }
+
+    .teammate-container {
+      margin-bottom: 20px;
+
+      .teammate-input {
+        width: calc(100% - 22px);
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid $input-border-color;
+        border-radius: 5px;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+          border-color: $input-focus-border-color;
+          outline: none;
+        }
+      }
+
+      .teammate-input:last-child {
+        margin-bottom: 50px; /* Add extra margin-bottom to the last teammate input */
+      }
+    }
+
+    .success-message {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #d4edda;
+      border: 1px solid #c3e6cb;
+      border-radius: 5px;
+      color: #155724;
+    }
   }
-  
+}
+@media only screen and (max-width: 600px) {
+  .add-teammate-button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

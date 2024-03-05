@@ -7,7 +7,7 @@ import { RiUserLine, RiMoreLine } from "react-icons/ri";
 import { TbTargetArrow } from "react-icons/tb";
 import { MdHomeFilled } from "react-icons/md";
 import logo from "../images/logo.png";
-import { NavLink, Route, Switch as RouterSwitch } from "react-router-dom"; // Rename Switch to RouterSwitch
+import { NavLink, Route, Routes } from "react-router-dom"; // Import Routes instead of Switch
 
 import "./Navbar.scss";
 import Passes from "./Pass";
@@ -52,6 +52,8 @@ const Navbar = () => {
             </NavLink>
           </li>
           {/* Your Passes */}
+          <hr className="divider"></hr>
+          <h2>You</h2>
           <li>
             <NavLink to="/passes" className="link" activeClassName="active">
               <div className="links-div">
@@ -95,12 +97,12 @@ const Navbar = () => {
 
       <div className="content">
         {/* Routing */}
-        <RouterSwitch>
-          <Route exact path="/passes" component={Passes} />
-          <Route exact path="/registrations" component={Registration} />
-          <Route exact path="/teams" component={Team} />
+        <Routes>
+          <Route exact path="/passes" element={<Passes />} />
+          <Route exact path="/registrations" element={<Registration />} />
+          <Route exact path="/teams" element={<Team />} />
           {/* Add more routes for other components */}
-        </RouterSwitch>
+        </Routes>
       </div>
     </div>
   );

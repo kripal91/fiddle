@@ -4,20 +4,27 @@ $baseColor: rgba(255, 255, 255, 0.5);
 $borderColor: gray;
 
 .topBarCont {
-  width: 37rem;
+  width: 50rem;
   height: 2.75rem;
   margin: 1rem 0rem 0rem 0;
   position: fixed;
   top: 0;
   right: 3.4rem;
-  z-index: 1;
+  z-index: 2;
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(0);
   border-radius: 1.5rem;
   transition: background-color 0.3s ease;
-  @media (min-width: 1440min) {
-    width: 50rem;
-    right: 5rem;
+  @media (max-width: 480px) {
+    width: 94vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding-top: 0.6rem;
+    height: 3rem;
+    left: 0;
+    right: 0;
+    border-radius: 0.4rem;
+    background-color: rgba(255, 255, 255, 0.4);
   }
   .top-bar {
     width: 100%;
@@ -47,7 +54,16 @@ $borderColor: gray;
     border: 1.5px solid $borderColor;
     @extend .icon;
   }
-
+@media (max-width:480px) {
+  .profile-icon{
+    display: none;
+  }
+  .notification-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.4rem;
+  }
+}
   .search-bar {
     flex: 1;
     margin-right: 0.625rem; // 10px / $baseFontSize
@@ -55,6 +71,11 @@ $borderColor: gray;
     border: 1px solid;
     border-radius: 1.5625rem; // 25px / $baseFontSize
     font-size: 1rem; // 16px / $baseFontSize
+    @media (max-width:480px) {
+      margin-right: 0.3rem;
+      padding: 6px 0px 6px 10px;
+    
+  }
   }
 
   .user-profile {
@@ -68,13 +89,18 @@ $borderColor: gray;
     overflow: hidden;
     background-position: cover;
     border: 0px solid $borderColor;
-
     .profile-image {
       width: 100%;
       height: 100%;
       object-fit: cover;
       border-radius: 50%;
     }
+    @media (max-width:480px) {
+    
+      width:2.2rem;
+      height:2.2rem;
+    
+  }
   }
 
   .dropdown-menu {

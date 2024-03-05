@@ -311,3 +311,9 @@ $breakpoint-large: 1440px;
     margin-left: $sidebar-width-open;
   }
 }
+@media screen and (max-width: 480px) {
+  .container{
+    position: relative;
+  left: -260px;
+  }
+}
